@@ -20,6 +20,15 @@ There are many other possible numbers like 45, 54, 90, etc with the sum of digit
 using namespace std;
 void lottery(int s, int n)
 {
+	
+	 if(s/9 == n){
+        	int sum = 0;
+        	for(int i = 0 ; i<n ; i++){
+            		sum += 9 * pow(10,i);
+        	}
+        	cout<<sum;
+        	return;
+    	}
 	int* arr = new int[n];
 	for (int i = 0; i < n; i++)
 	{
